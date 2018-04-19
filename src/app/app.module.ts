@@ -14,7 +14,10 @@ import { PhotoApiComponent } from './photo-api/photo-api.component';
     PhotoApiComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    //Http,
+    HttpModule,
+    //Response
   ],
   providers: [],
   bootstrap: [AppComponent]

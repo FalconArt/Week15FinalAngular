@@ -30,3 +30,4 @@ export class TranslateApiComponent implements OnInit {
   }
 
 }
+

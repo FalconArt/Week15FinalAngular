@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpModule, Http, Response} from '@angular/http';
 
 @Component({
   selector: 'app-photo-api',
@@ -25,7 +26,7 @@ export class PhotoApiComponent implements OnInit {
 		});
 	}
 	//const photoURL = `https://api.unsplash.com/search/photos?page=1&query=${newText}&client_id=80c1a3a5ef22579dc7ede34bd1f929da56ae74268624118f154a2d3418a164c0`;
-  constructor() { }
+  constructor(private http:Http) { }
 
   ngOnInit() {
   }
