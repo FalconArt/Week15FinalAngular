@@ -2,4 +2,9 @@
 
 <button mat-button (click)="getTranslation(searchInput.value)">Search</button>
 
-<span *ngIf="Loading">Loading...</span>
+<span>Loading...</span>
+
+<div class="photo" *ngFor="let image of photoData">
+	<img src="{{ image.urls.full }}">
+</div>
+

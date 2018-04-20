@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule, Http, Response } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TranslateApiComponent } from './translate-api/translate-api.component';
@@ -16,7 +16,7 @@ import { PhotoApiComponent } from './photo-api/photo-api.component';
   imports: [
     BrowserModule,
     //Http,
-    HttpModule,
+    HttpClientModule,
     //Response
   ],
   providers: [],
